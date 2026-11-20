@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apps CancissuBR</title>
+<style>
+  :root { --bg:#f7f7fd; --fg:#16161f; --muted:#4a4a5c; --accent:#4f46e5; --card:#ffffff; --line:#e4e3f0; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#101018; --fg:#e6e5f2; --muted:#c6c5d6; --accent:#b4b1ff; --card:#1b1b25; --line:#2e2e3d; } }
+  * { box-sizing: border-box }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; padding: 48px 16px; }
+  main { max-width: 640px; margin: 0 auto; }
+  h1 { font-size: 2rem; margin: 0 0 4px; }
+  .muted { color: var(--muted); margin: 0 0 32px; }
+  .app { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 20px 22px; display: flex; gap: 18px; align-items: center; }
+  .icon { width: 64px; height: 64px; border-radius: 16px; background: linear-gradient(135deg,#4f46e5,#7c3aed); flex: none; display: grid; place-items: center; }
+  h2 { margin: 0 0 4px; font-size: 1.2rem; }
+  .app p { margin: 0 0 8px; color: var(--muted); }
+  a { color: var(--accent); }
+  footer { margin-top: 40px; color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Apps CancissuBR</h1>
+  <p class="muted">Aplicativos para Android, sem anúncios e respeitando a sua privacidade.</p>
+  <div class="app">
+    <div class="icon" aria-hidden="true">
+      <svg width="40" height="40" viewBox="28 28 52 52" fill="none"><path fill="#fff" d="M42,36h17l9,9v27a2,2 0,0 1,-2 2h-24a2,2 0,0 1,-2 -2v-34a2,2 0,0 1,2 -2z"/><path fill="#7c79e8" d="M45,50h18v2.4h-18z M45,56h18v2.4h-18z M45,62h12v2.4h-12z"/></svg>
+    </div>
+    <div>
+      <h2>CPDF: Scanner de Documentos</h2>
+      <p>Escaneie em PDF com margens precisas. Sem marca d'água, sem anúncios, offline.</p>
+      <a href="cpdf/privacidade/">Política de privacidade</a>
+    </div>
+  </div>
+  <footer>© 2026 CancissuBR · <a href="mailto:contato@cancissu.com.br">contato@cancissu.com.br</a></footer>
+</main>
+</body>
+</html>
