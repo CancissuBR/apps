@@ -40,12 +40,12 @@
         <p>Toque numa imagem para ver em tamanho maior.</p>
       </div>
       <div class="gallery">
-        <a href="/assets/caclick/tela_01.png"><img src="/assets/caclick/tela_01_540.png" alt="Tela inicial com o serviço ativo" width="540" height="960" loading="lazy"></a>
-        <a href="/assets/caclick/tela_02.png"><img src="/assets/caclick/tela_02_540.png" alt="Painel flutuante com alvo" width="540" height="960" loading="lazy"></a>
-        <a href="/assets/caclick/tela_03.png"><img src="/assets/caclick/tela_03_540.png" alt="Configurações salvas" width="540" height="960" loading="lazy"></a>
-        <a href="/assets/caclick/tela_04.png"><img src="/assets/caclick/tela_04_540.png" alt="Personalizar tema e alvos" width="540" height="960" loading="lazy"></a>
-        <a href="/assets/caclick/tela_05.png"><img src="/assets/caclick/tela_05_540.png" alt="Tela inicial no modo escuro" width="540" height="960" loading="lazy"></a>
-        <a href="/assets/caclick/tela_06.png"><img src="/assets/caclick/tela_06_540.png" alt="CAclick Pro" width="540" height="960" loading="lazy"></a>
+        <a href="/assets/caclick/claro/tela_01.png" data-dark="/assets/caclick/tela_01.png"><picture><source media="(prefers-color-scheme: dark)" srcset="/assets/caclick/tela_01_540.png"><img src="/assets/caclick/claro/tela_01_540.png" alt="Tela inicial com o serviço ativo" width="540" height="960" loading="lazy"></picture></a>
+        <a href="/assets/caclick/claro/tela_02.png" data-dark="/assets/caclick/tela_02.png"><picture><source media="(prefers-color-scheme: dark)" srcset="/assets/caclick/tela_02_540.png"><img src="/assets/caclick/claro/tela_02_540.png" alt="Painel flutuante com alvo" width="540" height="960" loading="lazy"></picture></a>
+        <a href="/assets/caclick/claro/tela_03.png" data-dark="/assets/caclick/tela_03.png"><picture><source media="(prefers-color-scheme: dark)" srcset="/assets/caclick/tela_03_540.png"><img src="/assets/caclick/claro/tela_03_540.png" alt="Configurações salvas" width="540" height="960" loading="lazy"></picture></a>
+        <a href="/assets/caclick/claro/tela_04.png" data-dark="/assets/caclick/tela_04.png"><picture><source media="(prefers-color-scheme: dark)" srcset="/assets/caclick/tela_04_540.png"><img src="/assets/caclick/claro/tela_04_540.png" alt="Personalizar tema e alvos" width="540" height="960" loading="lazy"></picture></a>
+        <a href="/assets/caclick/claro/tela_05.png" data-dark="/assets/caclick/tela_05.png"><picture><source media="(prefers-color-scheme: dark)" srcset="/assets/caclick/tela_05_540.png"><img src="/assets/caclick/claro/tela_05_540.png" alt="Tela inicial no modo escuro" width="540" height="960" loading="lazy"></picture></a>
+        <a href="/assets/caclick/claro/tela_06.png" data-dark="/assets/caclick/tela_06.png"><picture><source media="(prefers-color-scheme: dark)" srcset="/assets/caclick/tela_06_540.png"><img src="/assets/caclick/claro/tela_06_540.png" alt="CAclick Pro" width="540" height="960" loading="lazy"></picture></a>
       </div>
     </div>
   </section>
@@ -125,5 +125,9 @@
     </nav>
   </div>
 </footer>
+<script id="gallery-theme">
+/* A imagem grande segue o mesmo tema das miniaturas. */
+(function(){var q=matchMedia("(prefers-color-scheme: dark)");function f(){document.querySelectorAll("a[data-dark]").forEach(function(a){if(!a.dataset.light)a.dataset.light=a.getAttribute("href");a.href=q.matches?a.dataset.dark:a.dataset.light;});}f();q.addEventListener("change",f);})();
+</script>
 </body>
 </html>
