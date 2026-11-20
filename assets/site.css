@@ -124,3 +124,12 @@ td.plan.pro { color: var(--accent); }
   .site-header, .toc, .site-footer nav { display: none; }
   body { font-size: 11pt; } .doc { display: block; padding: 0; } a { color: inherit; }
 }
+
+/* Galeria de capturas: desliza para o lado no celular, grade no computador */
+.gallery { display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 4px 2px 12px; -webkit-overflow-scrolling: touch; }
+.gallery a { flex: 0 0 auto; scroll-snap-align: start; border-radius: 18px; }
+.gallery img { width: 220px; height: auto; display: block; border-radius: 18px; border: 1px solid var(--line); background: var(--soft); }
+@media (min-width: 960px) {
+  .gallery { display: grid; grid-template-columns: repeat(6, 1fr); overflow: visible; }
+  .gallery img { width: 100%; }
+}
