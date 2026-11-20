@@ -2,39 +2,107 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Apps CancissuBR</title>
-<style>
-  :root { --bg:#f7f7fd; --fg:#16161f; --muted:#4a4a5c; --accent:#4f46e5; --card:#ffffff; --line:#e4e3f0; }
-  @media (prefers-color-scheme: dark) { :root { --bg:#101018; --fg:#e6e5f2; --muted:#c6c5d6; --accent:#b4b1ff; --card:#1b1b25; --line:#2e2e3d; } }
-  * { box-sizing: border-box }
-  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; padding: 48px 16px; }
-  main { max-width: 640px; margin: 0 auto; }
-  h1 { font-size: 2rem; margin: 0 0 4px; }
-  .muted { color: var(--muted); margin: 0 0 32px; }
-  .app { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 20px 22px; display: flex; gap: 18px; align-items: center; }
-  .icon { width: 64px; height: 64px; border-radius: 16px; background: linear-gradient(135deg,#4f46e5,#7c3aed); flex: none; display: grid; place-items: center; }
-  h2 { margin: 0 0 4px; font-size: 1.2rem; }
-  .app p { margin: 0 0 8px; color: var(--muted); }
-  a { color: var(--accent); }
-  footer { margin-top: 40px; color: var(--muted); font-size: .9rem; }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CancissuBR · Apps para Android</title>
+<meta name="description" content="Apps para Android feitos pela CancissuBR: sem anúncios, sem coleta de dados e com pagamento único.">
+<link rel="canonical" href="https://apps.cancissu.com.br/">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
-<main>
-  <h1>Apps CancissuBR</h1>
-  <p class="muted">Aplicativos para Android, sem anúncios e respeitando a sua privacidade.</p>
-  <div class="app">
-    <div class="icon" aria-hidden="true">
-      <svg width="40" height="40" viewBox="28 28 52 52" fill="none"><path fill="#fff" d="M42,36h17l9,9v27a2,2 0,0 1,-2 2h-24a2,2 0,0 1,-2 -2v-34a2,2 0,0 1,2 -2z"/><path fill="#7c79e8" d="M45,50h18v2.4h-18z M45,56h18v2.4h-18z M45,62h12v2.4h-12z"/></svg>
-    </div>
-    <div>
-      <h2>CPDF: Scanner de Documentos</h2>
-      <p>Escaneie em PDF com margens precisas. Sem marca d'água, sem anúncios, offline.</p>
-      <a href="cpdf/privacidade/">Política de privacidade</a>
-    </div>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><span class="brand-mark">C</span>CancissuBR</a>
+    <nav class="nav" aria-label="Principal">
+      <a href="/#apps">Apps</a>
+      <a href="/#principios">Princípios</a>
+      <a href="/#contato">Contato</a>
+    </nav>
   </div>
-  <footer>© 2026 CancissuBR · <a href="mailto:contato@cancissu.com.br">contato@cancissu.com.br</a></footer>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow">Apps para Android</span>
+      <h1>Ferramentas simples, feitas com cuidado e sem coletar os seus dados.</h1>
+      <p class="lead">A CancissuBR desenvolve aplicativos que resolvem uma tarefa muito bem, funcionam no próprio celular e respeitam a sua privacidade. Sem anúncios e sem assinaturas.</p>
+    </div>
+  </section>
+
+  <section class="section section-soft" id="apps">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Apps</h2>
+        <p>Disponíveis para Android.</p>
+      </div>
+      <article class="card app-card">
+        <img class="app-icon" src="/assets/cpdf-icon.svg" alt="Ícone do CPDF" width="88" height="88">
+        <div>
+          <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+            <h3 style="font-size:1.25rem">CPDF: Scanner de Documentos</h3>
+            <span class="pill"><span class="dot"></span>Em breve na Google Play</span>
+          </div>
+          <p style="margin-top:6px">Escaneie em PDF com margens precisas, na qualidade que você escolher.</p>
+          <ul>
+            <li>Ajuste de margens com lupa: 4 cantos e 4 bordas</li>
+            <li>PDF, JPG e Word em até 600 dpi, sem marca d'água</li>
+            <li>Funciona sem internet: nada sai do seu celular</li>
+          </ul>
+          <div class="actions">
+            <a class="btn btn-primary" href="/cpdf/">Conhecer o CPDF</a>
+            <a class="btn" href="/cpdf/privacidade/">Política de privacidade</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="principios">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Princípios</h2>
+        <p>O que vale para todos os nossos apps.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="icon-line" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <h3>Privacidade primeiro</h3>
+          <p>Processamos tudo no aparelho sempre que possível. Não pedimos conta e não rastreamos o uso.</p>
+        </div>
+        <div class="card">
+          <div class="icon-line" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M4 4l16 16"/></svg></div>
+          <h3>Sem anúncios</h3>
+          <p>Nenhum anúncio, nenhuma marca d'água nos seus arquivos e nenhuma tela de espera.</p>
+        </div>
+        <div class="card">
+          <div class="icon-line" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg></div>
+          <h3>Pague uma vez</h3>
+          <p>Recursos extras com compra única. O que é grátis continua grátis, sem assinatura mensal.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft" id="contato">
+    <div class="wrap">
+      <div class="section-head" style="margin-bottom:0">
+        <h2>Contato</h2>
+        <p>Dúvidas, sugestões ou problemas com algum app: <a href="mailto:contato@cancissu.com.br">contato@cancissu.com.br</a></p>
+      </div>
+    </div>
+  </section>
 </main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 CancissuBR</span>
+    <nav aria-label="Rodapé">
+      <a href="/cpdf/">CPDF</a>
+      <a href="/cpdf/privacidade/">Privacidade do CPDF</a>
+      <a href="mailto:contato@cancissu.com.br">contato@cancissu.com.br</a>
+    </nav>
+  </div>
+</footer>
 </body>
 </html>
